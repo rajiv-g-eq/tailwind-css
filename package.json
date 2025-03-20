@@ -97,7 +97,7 @@
     "yaml": "^2.7.0"
   },
   "scripts": {
-    "start": "npx tailwindcss -i assets/input.css -o assets/output.css --watch"
+    "start": "npx tailwindcss -i assets/input.css -o assets/output.css --watch --minify"
   },
   "author": "",
   "license": "ISC",

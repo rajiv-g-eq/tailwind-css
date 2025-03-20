@@ -8,25 +8,28 @@
     <link rel="stylesheet" href="assets/output.css">
 </head>
 
-<body>  
-    
+<body>
+
     <!-- header -->
     <header class="header-main py-5 lg:py-8">
         <div class="custom-container">
             <div class="flex justify-between items-center">
                 <div class="header-main__hamburg">
-                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    <svg class="menu-icon w-6 h-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#000">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
-                    <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000">
+                    <svg class="close-icon w-6 h-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#000">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                     </svg>
                 </div>
                 <figure class="header-main__logo">
-                    <img src="imgs/logo.svg" alt="logo">
+                    <img src="imgs/logo.svg" alt="logo" class="max-h-[30px] lg:max-h-[50px] w-auto">
                 </figure>
                 <nav class="header-main__menu">
-                    <ul>
+                    <ul class="lg:flex lg:items-center">
                         <li class="px-5"><a href="#">Protein Bars</a></li>
                         <li class="px-5"><a href="#">Merch</a></li>
                         <li class="px-5"><a href="#">About us</a></li>
@@ -35,8 +38,8 @@
                     </ul>
                 </nav>
                 <figure class="header-main__icon flex gap-2 lg:gap-3">
-                    <a href="javascript:void(0)"><img src="imgs/icon-user.svg" alt="icon"></a>
-                    <a href="javascript:void(0)"><img src="imgs/icon-cart.svg" alt="icon"></a>
+                    <a href="javascript:void(0)"><img src="imgs/icon-user.svg" alt="icon" class="w-6 lg:w-7 h-auto"></a>
+                    <a href="javascript:void(0)"><img src="imgs/icon-cart.svg" alt="icon" class="w-6 lg:w-7 h-auto"></a>
                 </figure>
             </div>
         </div>
@@ -44,15 +47,48 @@
     <!-- end header -->
 
     <!-- usp -->
-    <section class="usp bg-[#1E1E1E]">
+    <section class="usp bg-[#1E1E1E] p-[6px]">
         <div class="custom-container">
-            <div class="usp__text flex justify-center items-center">
-                <img src="imgs/usp-icon.svg" alt="icon">
+            <div class="usp__text flex justify-center items-center gap-2 lg:gap-6">
+                <img src="imgs/usp-icon.svg" alt="icon" class="w-5 lg:w-[30px] h-auto">
                 <span><span class="uppercase">Free Shipping</span> on all orders over €50</span>
             </div>
         </div>
     </section>
     <!-- end usp -->
+
+
+    <!-- Pro Bundle Benefits -->
+    <section class="bundle-benefit bg-[#8DC8E8] lg:bg-transparent">
+        <div class="custom-container">
+            <div class="bundle-benefit__inner lg:max-w-[905px] bg-[#fff] m-auto">
+                <div class="bundle-benefit__heading lg:block lg:pb-[52px]">
+                    <h2 class="bundle-benefit__heading-main mb-[22px]">Pro Bundle Benefits</h2>
+                    <div class="bundle-benefit__heading-desc">
+                        <p>More bars, fewer shipments, best price.</p>
+                    </div>
+                </div>
+                <div class="bundle-benefit__box flex items-stretch flex-wrap">
+                    <div class="bundle-benefit__box-item">
+                        <p>&nbsp;</p>
+                        <p>Regular <br> Order</p>
+                        <p>Mega <br> Bundle</p>
+                    </div>
+                    <div class="bundle-benefit__box-item">
+                        <p>Price Per Bar <span>Subscription Order</span></p>
+                        <p>€2.54</p>
+                        <p>€2.17</p>
+                    </div>
+                    <div class="bundle-benefit__box-item">
+                        <p>Free Shipping</p>
+                        <p>Over € 50</p>
+                        <p><img src="imgs/correct-icon.svg" alt="icon"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Pro Bundle Benefits -->
 
 
     <script src="assets/jquery-min.js"></script>
