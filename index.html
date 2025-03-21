@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="assets/plugins.css">
     <link rel="stylesheet" href="assets/output.css">
 </head>
 
@@ -15,12 +16,12 @@
         <div class="custom-container">
             <div class="flex justify-between items-center">
                 <div class="header-main__hamburg">
-                    <svg class="menu-icon w-6 h-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    <svg class="menu-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke-width="1.5" stroke="#000">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
-                    <svg class="close-icon w-6 h-auto" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    <svg class="close-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 24 24" stroke-width="1.5" stroke="#000">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                     </svg>
@@ -57,12 +58,203 @@
     </section>
     <!-- end usp -->
 
+    <!-- pdp main -->
+    <section class="pdp-main mt-6 lg:mt-9">
+        <div class="custom-container">
+            <div class="pdp-main__row lg:flex lg:gap-7 xl:gap-0">
+                <div class="pdp-main__left lg:w-2/4">
+                    <div class="pdp-main__slider-for js-pdp-main-slider-for">
+                        <div class="pdp-main__slider-for-item">
+                            <figure><img src="imgs/Choc_Sea_salt_05b82fa8-c6de-4e3a-971e-f5f5adbcd27d.png" alt="product" width="625" height="625" class="m-auto"></figure>
+                        </div>
+                        <div class="pdp-main__slider-for-item">
+                            <figure><img src="imgs/product-img.png" alt="product" width="625" height="625" class="m-auto"></figure>
+                        </div>
+                        <div class="pdp-main__slider-for-item">
+                            <figure><img src="imgs/52_f728aa79-0a22-4e69-82cc-5953cdc4c789.png" alt="product" width="625" height="625" class="m-auto"></figure>
+                        </div>
+                        <div class="pdp-main__slider-for-item">
+                            <figure><img src="imgs/product-img1.png" alt="product" width="625" height="625" class="m-auto"></figure>
+                        </div>
+                        <div class="pdp-main__slider-for-item">
+                            <figure><img src="imgs/product-img2.png" alt="product" width="625" height="625" class="m-auto"></figure>
+                        </div>
+                    </div>
+                    <div class="pdp-main__slider-nav js-pdp-main-slider-nav lg:mt-4 hidden lg:block">
+                        <div class="pdp-main__slider-nav-item">
+                            <figure><img src="imgs/Choc_Sea_salt_05b82fa8-c6de-4e3a-971e-f5f5adbcd27d.png" alt="product" width="125" height="125"></figure>
+                        </div>
+                        <div class="pdp-main__slider-nav-item">
+                            <figure><img src="imgs/product-img.png" alt="product" width="125" height="125"></figure>
+                        </div>
+                        <div class="pdp-main__slider-nav-item">
+                            <figure><img src="imgs/52_f728aa79-0a22-4e69-82cc-5953cdc4c789.png" alt="product" width="125" height="125"></figure>
+                        </div>
+                        <div class="pdp-main__slider-nav-item">
+                            <figure><img src="imgs/product-img1.png" alt="product" width="125" height="125"></figure>
+                        </div>
+                        <div class="pdp-main__slider-nav-item">
+                            <figure><img src="imgs/product-img2.png" alt="product" width="125" height="125"></figure>
+                        </div>
+                    </div>
+                    <ul class="pdp-main__icon-list -mx-2 lg:-mx-[2px] hidden lg:flex items-center lg:mt-16">
+                        <li class="lg:mx-[2px]">
+                            <img src="imgs/list-icon1.png" alt="icon">
+                        </li>
+                        <li class="lg:mx-[2px]">
+                            <img src="imgs/list-icon2.png" alt="icon">
+                        </li>
+                        <li class="lg:mx-[2px]">
+                            <img src="imgs/list-icon3.png" alt="icon">
+                        </li>
+                        <li class="lg:mx-[2px]">
+                            <img src="imgs/list-icon4.png" alt="icon">
+                        </li>
+                        <li class="lg:mx-[2px]">
+                            <img src="imgs/list-icon5.png" alt="icon">
+                        </li>
+                        <li class="lg:mx-[2px]">
+                            <img src="imgs/list-icon6.png" alt="icon">
+                        </li>
+                    </ul>
+                </div>
+                <div class="pdp-main__right lg:w-2/4 xl:pl-32 mt-5 lg:mt-0">
+                    <form action="#">
+                        <h2 class="pdp-main__right-heading pb-[6px] lg:pb-3">Build a Bundle</h2>
+                        <div class="pdp-main__rating flex items-center gap-3 justify-center lg:justify-start">
+                            <img src="imgs/rating-icon.svg" alt="rating">
+                            <span>Based on 59+ happy customers</span>
+                        </div>
+                        <div class="pdp-main__color-box mt-11 hidden lg:block">
+                            <ul class="flex flex-wrap gap-x-[14px] gap-y-5 xl:gap-y-12">
+                                <li class="border-2 border-solid border-[#000000] rounded-[50%] w-[82px] h-[82px] overflow-hidden">
+                                    <img src="imgs/color-img1.png" alt="color product" width="100" height="100">
+                                </li>
+                                <li class="border border-solid border-[#000000] rounded-[50%] w-[82px] h-[82px] overflow-hidden">
+                                    <img src="imgs/color-img2.png" alt="color product" width="100" height="100" >
+                                </li>
+                                <li class="border border-solid border-[#000000] rounded-[50%] w-[82px] h-[82px] overflow-hidden">
+                                    <img src="imgs/color-img3.png" alt="color product" width="100" height="100" >
+                                </li>
+                                <li class="border border-solid border-[#000000] rounded-[50%] w-[82px] h-[82px] overflow-hidden">
+                                    <img src="imgs/color-img4.png" alt="color product" width="100" height="100" >
+                                </li>
+                                <li class="border border-solid border-[#000000] rounded-[50%] w-[82px] h-[82px] overflow-hidden">
+                                    <img src="imgs/color-img5.png" alt="color product" width="100" height="100" >
+                                </li>
+                                <li class="border border-solid border-[#000000] rounded-[50%] w-[82px] h-[82px] overflow-hidden">
+                                    <img src="imgs/color-img6.png" alt="color product" width="100" height="100" >
+                                </li>
+                                <li class="border border-solid border-[#000000] rounded-[50%] w-[82px] h-[82px] overflow-hidden">
+                                    <img src="imgs/color-img7.png" alt="color product" width="100" height="100" >
+                                </li>
+                                <li class="border border-solid border-[#000000] rounded-[50%] w-[82px] h-[82px] overflow-hidden">
+                                    <img src="imgs/color-img8.png" alt="color product" width="100" height="100" >
+                                </li>
+                                <li class="border border-solid border-[#000000] rounded-[50%] w-[82px] h-[82px] overflow-hidden">
+                                    <img src="imgs/color-img9.png" alt="color product" width="100" height="100" >
+                                </li>
+                                <li class="border border-solid border-[#000000] rounded-[50%] w-[82px] h-[82px] overflow-hidden">
+                                    <img src="imgs/ultimate_pack.png" alt="color product" width="100" height="100" >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pdp-main__bundle-box hidden lg:block mt-16">
+                            <ul class="flex gap-5">
+                                <li class="border border-solid border-[#C3CFD9] rounded-[5px] w-20 h-20 flex items-center justify-center overflow-hidden relative">
+                                    <img src="imgs/all-real-plus-icon.svg" alt="icon">
+                                </li>
+                                <li class="border border-solid border-[#C3CFD9] rounded-[5px] w-20 h-20 flex items-center justify-center overflow-hidden relative">
+                                    <img src="imgs/all-real-plus-icon.svg" alt="icon">
+                                </li>
+                                <li class="border border-solid border-[#C3CFD9] rounded-[5px] w-20 h-20 flex items-center justify-center overflow-hidden relative">
+                                    <img src="imgs/all-real-plus-icon.svg" alt="icon">
+                                </li>
+                                <li class="border border-solid border-[#C3CFD9] rounded-[5px] w-20 h-20 flex items-center justify-center overflow-hidden relative">
+                                    <img src="imgs/all-real-plus-icon.svg" alt="icon">
+                                </li>
+                                <li class="border border-solid border-[#C3CFD9] rounded-[5px] w-20 h-20 flex items-center justify-center overflow-hidden relative free-product">
+                                    <span>Free Box</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pdp-main__bundle-mob lg:hidden mt-3">
+                            <h6 class="pdp-main__bundle-mob-heading">Order 4 boxes and get your 5th for Free</h6>
+                            <ul>
+                                <li class=" relative overflow-hidden">
+                                    <span style="background-color: #CEBD99;"></span>
+                                    <select class="border border-solid border-[#7D7D7D] rounded-[10px] focus-visible:border-2 focus-visible:border-[#000]" name="product-bundle">
+                                        <option value="">Select box 1</option>
+                                        <option value="product 1">product 1</option>
+                                        <option value="product 2">product 2</option>
+                                    </select>
+                                </li>
+                                <li class=" relative overflow-hidden">
+                                    <span style="background-color: #A7BC83;"></span>
+                                    <select class="border border-solid border-[#7D7D7D] rounded-[10px] focus-visible:border-2 focus-visible:border-[#000]" name="product-bundle">
+                                        <option value="">Select box 2</option>
+                                        <option value="product 1">product 1</option>
+                                        <option value="product 2">product 2</option>
+                                    </select>
+                                </li>
+                                <li class=" relative overflow-hidden">
+                                    <span style="background-color: #E49BAE;"></span>
+                                    <select class="border border-solid border-[#7D7D7D] rounded-[10px] focus-visible:border-2 focus-visible:border-[#000]" name="product-bundle">
+                                        <option value="">Select box 3</option>
+                                        <option value="product 1">product 1</option>
+                                        <option value="product 2">product 2</option>
+                                    </select>
+                                </li>
+                                <li class=" relative overflow-hidden">
+                                    <span style="background-color: #E8746C;"></span>
+                                    <select class="border border-solid border-[#7D7D7D] rounded-[10px] focus-visible:border-2 focus-visible:border-[#000]" name="product-bundle">
+                                        <option value="">Select box 4</option>
+                                        <option value="product 1">product 1</option>
+                                        <option value="product 2">product 2</option>
+                                    </select>
+                                </li>
+                                <li class=" relative overflow-hidden">
+                                    <span style="background: linear-gradient(96.51deg, rgba(244, 143, 26, 0.6) 24.72%, rgba(175, 215, 15, 0.6) 42.45%, rgba(4, 70, 198, 0.6) 58.35%, rgba(225, 6, 6, 0.6) 76.86%);"></span>
+                                    <select class="border border-solid border-[#7D7D7D] rounded-[10px] focus-visible:border-2 focus-visible:border-[#000]" name="product-bundle">
+                                        <option value="">Select free box</option>
+                                        <option value="product 1">product 1</option>
+                                        <option value="product 2">product 2</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="pdp-main__icon-list -mx-[4px] flex lg:hidden items-center mt-4">
+                            <li class="mx-[4px]">
+                                <img src="imgs/list-icon1.png" alt="icon">
+                            </li>
+                            <li class="mx-[4px]">
+                                <img src="imgs/list-icon2.png" alt="icon">
+                            </li>
+                            <li class="mx-[4px]">
+                                <img src="imgs/list-icon3.png" alt="icon">
+                            </li>
+                            <li class="mx-[4px]">
+                                <img src="imgs/list-icon4.png" alt="icon">
+                            </li>
+                            <li class="mx-[4px]">
+                                <img src="imgs/list-icon5.png" alt="icon">
+                            </li>
+                            <li class="mx-[4px]">
+                                <img src="imgs/list-icon6.png" alt="icon">
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end pdp main -->
 
     <!-- Pro Bundle Benefits -->
-    <section class="bundle-benefit bg-[#8DC8E8] lg:bg-transparent">
+    <section class="bundle-benefit bg-[#8DC8E8] lg:bg-transparent py-5 lg:p-0 mt-5 mb-14 lg:my-[138px]">
         <div class="custom-container">
-            <div class="bundle-benefit__inner lg:max-w-[905px] bg-[#fff] m-auto">
-                <div class="bundle-benefit__heading lg:block lg:pb-[52px]">
+            <div class="bundle-benefit__inner lg:max-w-[900px] bg-[#fff] m-auto rounded-[20px] lg:rounded-none">
+                <div class="bundle-benefit__heading hidden lg:block lg:pb-[77px]">
                     <h2 class="bundle-benefit__heading-main mb-[22px]">Pro Bundle Benefits</h2>
                     <div class="bundle-benefit__heading-desc">
                         <p>More bars, fewer shipments, best price.</p>
@@ -80,9 +272,19 @@
                         <p>€2.17</p>
                     </div>
                     <div class="bundle-benefit__box-item">
+                        <p>Price Per Bar <span>One-Time Order</span></p>
+                        <p>€2.77</p>
+                        <p>€2.17</p>
+                    </div>
+                    <div class="bundle-benefit__box-item">
                         <p>Free Shipping</p>
                         <p>Over € 50</p>
                         <p><img src="imgs/correct-icon.svg" alt="icon"></p>
+                    </div>
+                    <div class="bundle-benefit__box-item">
+                        <p>Plastic Bottles Stopped</p>
+                        <p>12 or More</p>
+                        <p>60</p>
                     </div>
                 </div>
             </div>
@@ -92,6 +294,7 @@
 
 
     <script src="assets/jquery-min.js"></script>
+    <script src="assets/plugins.js"></script>
     <script src="assets/custom.js"></script>
 
 </body>

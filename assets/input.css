@@ -102,9 +102,20 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'PhoreusCherokee';
+    src: url('fonts/phoreuscherokee-regular-webfont.woff2') format('woff2'),
+    url('fonts/phoreuscherokee-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root{
     --font-verdana: 'Verdana', sans-serif;
     --font-poppins: 'Poppins', sans-serif;
+    --font-PhoreusCherokee: 'PhoreusCherokee', sans-serif;
+    
 }
 
 *{
@@ -139,12 +150,17 @@ body{
     line-height: normal;
     letter-spacing: normal;
     color: #FFFFFF;
-}   
+}
 .usp__text span > span{
     font-weight: 700;
 }
+.header-main__hamburg svg {
+    --size: 24px;
+    width: var(--size);
+    height: var(--size);
+}
 .bundle-benefit__heading-main{
-    font-family: var(--font-poppins);
+    font-family: var(--font-PhoreusCherokee);
     font-weight: 700;
     font-style: italic;
     font-size: 52px;
@@ -153,7 +169,7 @@ body{
     text-align: center;
 }
 .bundle-benefit__heading-desc p{
-    font-family: var(--font-poppins);
+    font-family: var(--font-PhoreusCherokee);
     font-weight: 400;
     font-size: 42px;
     line-height: normal;
@@ -166,28 +182,46 @@ body{
     width: 100%;
 }
 .bundle-benefit__box-item p{
-    padding: 33px 16px;
+    padding: 33px 35px;
     text-align: center;
+    font-family: var(--font-PhoreusCherokee);
+    font-weight: 600;
+    font-size: 26px;
+    line-height: normal;
+    letter-spacing: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .bundle-benefit__box-item p:first-child{
-    flex: 0 1 337px;
-    max-width: 337px;
+    flex: 0 1 340px;
+    max-width: 340px;
+    text-align: left;
+    align-items: start;
+    font-family: var(--font-PhoreusCherokee);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: #000000;
+    border-right: 2px solid #000000;
 }
 .bundle-benefit__box-item p:nth-child(2){
-    flex: 0 1 270px;
-    max-width: 270px;
+    flex: 0 1 272px;
+    max-width: 272px;
     color: #525050;
 }
 .bundle-benefit__box-item p:last-child{
-    flex: 0 1 286px;
-    max-width: 286px;
-    text-shadow: 0px 1px 2px 0px #00000099;
+    flex: 0 1 288px;
+    max-width: 288px;
+    text-shadow: 0px 1px 2px #00000099;
     color: #fff;
     background: #FFC658;
     box-shadow: 0px 8px 46px 0px #00000033;
 }
 .bundle-benefit__box-item:first-child p{
-    font-family: var(--font-poppins);
+    font-family: var(--font-PhoreusCherokee);
     font-weight: 600;
     font-size: 28px;
     line-height: normal;
@@ -196,7 +230,7 @@ body{
     color: #000000;
 }
 .bundle-benefit__box-item:first-child p:last-child{
-    font-family: var(--font-poppins);
+    font-family: var(--font-PhoreusCherokee);
     font-weight: 700;
     font-style: italic;
     font-size: 32px;
@@ -204,22 +238,20 @@ body{
     letter-spacing: normal;
     text-align: center;
     color: #000000;
+    text-shadow: unset;
+    margin-top: -25px;
+    border-radius: 8px 8px 0 0;
 }
-.bundle-benefit__box-item:not(:first-child) p:first-child{
-    font-family: var(--font-poppins);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 100%;
-    letter-spacing: 3%;
-    color: #000000;
-    border-right: 2px solid #000000;
+.bundle-benefit__box-item:last-child p:last-child{
+    margin-bottom: -25px;
+    border-radius: 0 0 8px 8px;
 }
-.bundle-benefit__box-item:not(:first-child) p:first-child span{
-    font-family: var(--font-poppins);
+.bundle-benefit__box-item p:first-child span{
+    font-family: var(--font-PhoreusCherokee);
     font-weight: 400;
     font-size: 18px;
     line-height: normal;
-    letter-spacing: 3%;
+    letter-spacing: 0.03em;
     margin-top: 5px;
     display: block;
     color: #000000;
@@ -233,6 +265,83 @@ body{
 .bundle-benefit__box-item:not(:last-child){
     border-bottom: 2px solid #000000
 }
+.pdp-main__slider-nav .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.pdp-main__slider-nav .slick-arrow.prev-arrow {
+    left: 0;
+}
+.pdp-main__slider-nav .slick-arrow.next-arrow {
+    right: 0;
+}
+.pdp-main__slider-nav .slick-arrow.next-arrow svg{
+    transform: rotate(180deg);
+}
+.pdp-main__slider-for .pdp-main__slider-for-item:not(:first-child){
+    display: none;
+}
+.pdp-main__slider-for.slick-initialized .pdp-main__slider-for-item{
+    display: block;
+}
+.pdp-main__slider-nav .slick-list {
+    width: calc(100% - 50px);
+    margin: 0 auto;
+}
+.pdp-main__slider-nav-item{
+    opacity: 0.5;
+    margin: 0 12px;
+    cursor: pointer;
+}
+.pdp-main__slider-nav-item.slick-current{
+    opacity: 1;
+}
+.pdp-main__slider-nav:not(.slick-initialized){
+    display: flex;
+    align-items: stretch;
+    overflow-x: hidden;
+}
+.pdp-main__slider-nav:not(.slick-initialized) .pdp-main__slider-nav-item{
+    opacity: 0.5;
+    margin: 0 12px;
+    cursor: pointer;
+    flex: 0 0 120px;
+}
+.pdp-main__slider-nav:not(.slick-initialized) .pdp-main__slider-nav-item:first-child{
+    opacity: 1;
+}
+.pdp-main__right-heading{
+    font-family: var(--font-PhoreusCherokee);
+    font-weight: 600;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 1.25;
+    letter-spacing: normal;
+}
+.pdp-main__rating span{
+    font-family: var(--font-PhoreusCherokee);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 0px;
+}
+.pdp-main__icon-list li{
+    flex: 0 1 calc(100% / 6);
+    max-width: calc(100% / 6);
+}
+.pdp-main__bundle-box li{
+    flex: 0 1 calc(100% / 5);
+    width: calc(100% / 5);
+}
+.pdp-main__bundle-box li span{
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: normal;
+}
 @media only screen and (min-width: 992px){
     .custom-container{
         max-width: 1285px;
@@ -241,7 +350,6 @@ body{
         display: none;
     }
 }
-
 @media only screen and (max-width: 991px){
     .usp__text span{
         font-size: 14px;
@@ -274,8 +382,133 @@ body{
     .main-open-menu{
         overflow: hidden;
     }
+    .bundle-benefit__box-item p:first-child{
+        flex: 1;
+        max-width: 100%;
+        border-right-width: 1px;
+    }
+    .bundle-benefit__box-item p:nth-child(2),
+    .bundle-benefit__box-item p:last-child {
+        flex: 0 1 220px;
+        max-width: 220px;
+    }
+    .bundle-benefit__box-item p img {
+        --size: 40px;
+    }
+    .bundle-benefit__box-item:not(:last-child){
+        border-bottom-width: 1px;
+    }
+    .bundle-benefit__box-item:first-child p:last-child{
+        margin-top: -8px;
+        font-size: 24px;
+    }
+    .bundle-benefit__box-item:last-child p:last-child {
+        margin-bottom: -8px;
+    }
+    .bundle-benefit__box-item:first-child p,
+    .bundle-benefit__box-item p:first-child{
+        font-size: 20px;
+    }
+    .bundle-benefit__box-item p{
+        padding: 25px 20px;
+        font-size: 20px;
+    }
+    .bundle-benefit__box-item p:first-child span{
+        font-size: 16px;
+    }
+    .pdp-main__slider-for .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+    .pdp-main__slider-for .slick-arrow.prev-arrow {
+        left: 0;
+    }
+    .pdp-main__slider-for .slick-arrow.next-arrow {
+        right: 0;
+    }
+    .pdp-main__slider-for .slick-arrow.next-arrow svg{
+        transform: rotate(180deg);
+    }
+    .pdp-main__slider-for .slick-list {
+        width: calc(100% - 55px);
+        margin: 0 auto;
+    }
+    .pdp-main__right-heading {
+        font-size: 28px;
+        text-align: center;
+    }
+    .pdp-main__rating span{
+        font-weight: 400;
+    }
+    .pdp-main__bundle-mob-heading{
+        font-family: var(--font-PhoreusCherokee);
+        font-weight: 700;
+        font-style: italic;
+        font-size: 16px;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 0 45px;
+    }
+    .pdp-main__bundle-mob ul li span{
+        position: absolute;
+        left: 50%;
+        width: 240px;
+        height: 40px;
+        transform: translateX(-50%) rotate(-23.56deg);
+        z-index: 1;
+    }
+    .pdp-main__bundle-mob ul li:not(:last-child){
+        margin-bottom: 12px;
+    }
+    .pdp-main__bundle-mob ul li select {
+        width: 100%;
+        padding: 11px;
+        text-transform: capitalize;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        background: transparent;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.8167 3.62077C14.5724 3.37641 14.1774 3.37641 13.933 3.62077L7.49998 10.0538L1.06699 3.62077C0.822631 3.37641 0.42763 3.37641 0.18327 3.62077C-0.06109 3.86513 -0.06109 4.26013 0.18327 4.50449L7.05813 11.3794C7.1161 11.4375 7.18497 11.4836 7.2608 11.515C7.33663 11.5464 7.41792 11.5626 7.50001 11.5625C7.58209 11.5626 7.66338 11.5464 7.73921 11.515C7.81504 11.4836 7.88392 11.4375 7.94188 11.3794L14.8167 4.50449C15.0611 4.26013 15.0611 3.86513 14.8167 3.62077Z' fill='black'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: 96% center;
+        background-size: 18px;
+        border-radius: 10px;
+        outline: 0;
+        box-shadow: unset;
+    }
 }
-
+@media only screen and (max-width: 767px){
+    .bundle-benefit__box-item p:nth-child(2),
+    .bundle-benefit__box-item p:last-child {
+        flex: 0 1 102px;
+        max-width: 102px; 
+    }
+    .bundle-benefit__box-item:first-child p,
+    .bundle-benefit__box-item p:first-child{
+        font-size: 12px;
+    }
+    .bundle-benefit__box-item:first-child p:last-child{
+        font-size: 16px;
+    }
+    .bundle-benefit__box-item p{
+        padding: 10px 16px;
+        font-size: 12px;
+    }
+    .bundle-benefit__box-item p:first-child span{
+        font-size: 8px;
+    }
+    .bundle-benefit__box-item p img {
+        --size: 25px;
+    }
+    .pdp-main__right-heading {
+        font-size: 20px;
+    }
+}
 @media only screen and (max-width: 575px){
     .usp__text span{
         font-size: 10px;
