@@ -36,4 +36,77 @@ $(function () {
         });
     }
 
+    $('.qty-minus').click(function() {
+        let $input = $(this).siblings('input[name="pdp-qty"]');
+        let value = parseInt($input.val()) || 1;
+        if (value > 1) {
+            $input.val(value - 1);
+        }
+    });
+
+    $('.qty-plus').click(function() {
+        let $input = $(this).siblings('input[name="pdp-qty"]');
+        let value = parseInt($input.val()) || 1;
+        if (value < 999) {
+            $input.val(value + 1);
+        }
+    });
+
+    let selectedProducts = [];
+    
+    $(document).on('click', '.pdp-main__color-box ul li img', function () {
+        let imgSrc = $(this).attr('src');
+        
+        if (selectedProducts.length < 5) {
+            selectedProducts.push({
+              imgSrc
+            });
+            updateBundle();
+        }
+          
+    });
+    
+    function updateBundle() {
+        let bundleItems = $('.pdp-main__bundle-box ul li');
+        bundleItems.each(function (index) {
+            
+            if (index < selectedProducts.length) {
+              $(this).addClass("is-product");
+              $(this).html(`<img src="imgs/close-icon.svg" alt="close icon" class="close-icon"> <img src="${selectedProducts[index].imgSrc}" alt="product">`);
+              
+            } 
+        });
+    }
+
+    $(document).on('click', '.pdp-main__bundle-box ul li .close-icon', function () {
+  
+        let parentItem = $(this).closest('li');
+        let index = parentItem.index();
+
+        if (index < selectedProducts.length) {
+            selectedProducts.splice(index, 1);
+
+            if ($('.pdp-main__bundle-box .free-product').hasClass("is-product")) {
+                $('.pdp-main__bundle-box li').removeClass('is-product');
+                $('.pdp-main__bundle-box li').removeClass('free-product');
+                $('.pdp-main__bundle-box ul').append(`
+                    <li class="free-product">
+                        <span>Free Box!</span>
+                    </li>
+                `);
+                $('.pdp-main__bundle-box li').last().addClass("free-product");
+            } else {
+              let lastItem = $('.pdp-main__bundle-box li.free-product').last();
+                lastItem.before(`
+                    <li>
+                        <img src="imgs/all-real-plus-icon.svg" alt="icon">
+                    </li>
+                `);
+            }
+            parentItem.remove();
+            updateBundle();
+        }
+      });
+    
+
 });
