@@ -577,6 +577,10 @@ video {
   margin-right: 4px;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .mb-14 {
   margin-bottom: 3.5rem;
 }
@@ -627,6 +631,14 @@ video {
 
 .mt-\[30px\] {
   margin-top: 30px;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -880,11 +892,6 @@ video {
   padding-right: 0.75rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
 .px-\[10px\] {
   padding-left: 10px;
   padding-right: 10px;
@@ -951,6 +958,10 @@ video {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-\[12px\] {
   font-size: 12px;
 }
@@ -971,8 +982,28 @@ video {
   font-size: 16px;
 }
 
+.text-\[17px\] {
+  font-size: 17px;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.text-\[22px\] {
+  font-size: 22px;
+}
+
+.text-\[52px\] {
+  font-size: 52px;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-normal {
@@ -987,8 +1018,56 @@ video {
   text-transform: uppercase;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .italic {
   font-style: italic;
+}
+
+.leading-\[1\.1\] {
+  line-height: 1.1;
+}
+
+.leading-\[1\.25\] {
+  line-height: 1.25;
+}
+
+.leading-\[1\.2\] {
+  line-height: 1.2;
+}
+
+.leading-\[1\.6\] {
+  line-height: 1.6;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
+.leading-normal {
+  line-height: 1.5;
+}
+
+.tracking-\[0\.03em\] {
+  letter-spacing: 0.03em;
+}
+
+.tracking-\[0\.38px\] {
+  letter-spacing: 0.38px;
+}
+
+.tracking-\[0\.43px\] {
+  letter-spacing: 0.43px;
+}
+
+.tracking-\[0\.8px\] {
+  letter-spacing: 0.8px;
+}
+
+.tracking-normal {
+  letter-spacing: 0em;
 }
 
 .text-\[\#009B48\] {
@@ -1001,9 +1080,19 @@ video {
   color: rgb(20 20 20 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\#1C1D1D\] {
+  --tw-text-opacity: 1;
+  color: rgb(28 29 29 / var(--tw-text-opacity, 1));
+}
+
 .text-\[\#808080\] {
   --tw-text-opacity: 1;
   color: rgb(128 128 128 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#FFFFFF\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .text-white {
@@ -1202,46 +1291,21 @@ body{
 
 .header-main__menu ul li a{
   font-family: var(--font-verdana);
-  line-height: 1.6;
-  text-transform: capitalize;
-  display: block;
 }
 
 .usp__text span{
   font-family: var(--font-poppins);
-  line-height: normal;
-  letter-spacing: normal;
-  color: #FFFFFF;
-}
-
-.header-main__hamburg svg {
-  --size: 24px;
-  width: var(--size);
-  height: var(--size);
 }
 
 .bundle-benefit__heading-main{
   font-family: var(--font-PhoreusCherokee);
-  font-weight: 700;
-  font-style: italic;
-  font-size: 52px;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
 }
 
 .bundle-benefit__heading-desc p{
   font-family: var(--font-PhoreusCherokee);
-  font-weight: 400;
-  font-size: 42px;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
 }
 
 .bundle-benefit__box-item{
-  display: flex;
-  align-items: stretch;
   width: 100%;
 }
 
@@ -1422,7 +1486,6 @@ body{
 }
 
 .pdp-main__bundle-box li{
-  /* overflow: hidden; */
   position: relative;
   border: 1px solid #C3CFD9;
   --size: 80px;
@@ -1459,45 +1522,22 @@ body{
 
 .pdp-main__purchase-options h6{
   font-family: var(--font-PhoreusCherokee);
-  line-height: 1.25;
-  letter-spacing: 0.43px;
 }
 
 .pdp-main__purchase-options .form-group p:first-child{
   font-family: var(--font-poppins);
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 1.1;
-  color: #1C1D1D;
 }
 
 .pdp-main__purchase-options .form-group p:last-child{
   font-family: var(--font-poppins);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.43px;
-  text-align: right;
-  color: #1C1D1D;
 }
 
 .pdp-main__purchase-options .form-group .save-label{
   font-family: var(--font-poppins);
-  font-weight: 400;
-  font-size: 13px;
-  line-height: normal;
-  letter-spacing: 0.43px;
-  color: #1C1D1D;
 }
 
 .pdp-main__purchase-options .form-group .frequency span{
   font-family: var(--font-poppins);
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 1.2;
-  letter-spacing: normal;
-  color: #1C1D1D;
-  text-transform: capitalize;
 }
 
 .pdp-main__purchase-options .form-group .frequency select {
@@ -1509,19 +1549,10 @@ body{
      -moz-appearance: none;
           appearance: none;
   font-family: var(--font-poppins);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: normal;
-  color: #1C1D1D;
-  outline: 0;
-  box-shadow: unset;
 }
 
 .purchase-options-note span{
   font-family: var(--font-poppins);
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1;
 }
 
 .form-group input:not(:checked) + label .frequency {
@@ -1535,14 +1566,10 @@ body{
 
 .pdp-main__cart-qty input{
   font-family: var(--font-poppins);
-  line-height: 1;
-  letter-spacing: 0.38px;
 }
 
 .pdp-main__stock-deliver p{
   font-family: var(--font-poppins);
-  line-height: 1;
-  margin-bottom: 0;
 }
 
 .pdp-main__guarentee-note img{
@@ -1551,22 +1578,17 @@ body{
   height: var(--size);
 }
 
-.pdp-main__guarentee-note p{
+.pdp-main__guarentee-note p,
+.people-saying__heading{
   font-family: var(--font-PhoreusCherokee);
-  line-height: 1;
-  letter-spacing: 0px;
 }
 
 .pdp-main__cart-btn span{
   font-family: var(--font-poppins);
-  line-height: 1;
-  letter-spacing: 0.8px;
 }
 
 .pdp-main__payment span{
   font-family: var(--font-poppins);
-  line-height: 1;
-  letter-spacing: 0px;
 }
 
 @media only screen and (min-width: 992px){
@@ -1601,15 +1623,6 @@ body{
 
   .header-main__hamburg.open-menu .menu-icon {
     display: none;
-  }
-
-  .header-main__menu ul li {
-    border-bottom: 1px solid #000;
-    padding: 0;
-  }
-
-  .header-main__menu ul li a{
-    padding: 8px 20px;
   }
 
   .main-open-menu{
@@ -1730,8 +1743,7 @@ body{
   }
 
   .bundle-benefit__box-item:first-child p,
-    .bundle-benefit__box-item p:first-child,
-    .pdp-main__purchase-options .form-group p:last-child{
+    .bundle-benefit__box-item p:first-child{
     font-size: 12px;
   }
 
@@ -1752,19 +1764,7 @@ body{
     --size: 25px;
   }
 
-  .pdp-main__purchase-options .form-group p:first-child,
-    .pdp-main__purchase-options .form-group .frequency span{
-    font-size: 14px;
-  }
-
-  .pdp-main__purchase-options .form-group .save-label,
-    .purchase-options-note span{
-    font-size: 10px;
-  }
-
   .pdp-main__purchase-options .form-group .frequency select{
-    font-size: 11px;
-    font-weight: 500;
     background-size: 15px 8px;
   }
 
@@ -1838,6 +1838,10 @@ body{
   .md\:text-\[28px\] {
     font-size: 28px;
   }
+
+  .md\:tracking-\[0\.03em\] {
+    letter-spacing: 0.03em;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1876,6 +1880,10 @@ body{
     margin-top: 2.25rem;
   }
 
+  .lg\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1906,6 +1914,10 @@ body{
 
   .lg\:max-w-\[900px\] {
     max-width: 900px;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
   }
 
   .lg\:flex-wrap {
@@ -1960,6 +1972,11 @@ body{
     padding: 0px;
   }
 
+  .lg\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1987,6 +2004,14 @@ body{
 
   .lg\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .lg\:text-\[42px\] {
+    font-size: 42px;
+  }
+
+  .lg\:text-\[52px\] {
+    font-size: 52px;
   }
 
   .lg\:font-semibold {
@@ -2021,18 +2046,61 @@ body{
 }
 
 @media (max-width: 991px) {
+  .mob-md\:border-b {
+    border-bottom-width: 1px;
+  }
+
+  .mob-md\:border-solid {
+    border-style: solid;
+  }
+
+  .mob-md\:border-\[\#000\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
+  }
+
+  .mob-md\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .mob-md\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
   .mob-md\:text-center {
     text-align: center;
   }
 }
 
 @media (max-width: 767px) {
+  .mob-sm\:text-\[10px\] {
+    font-size: 10px;
+  }
+
+  .mob-sm\:text-\[11px\] {
+    font-size: 11px;
+  }
+
   .mob-sm\:text-\[12px\] {
     font-size: 12px;
   }
 
+  .mob-sm\:text-\[14px\] {
+    font-size: 14px;
+  }
+
+  .mob-sm\:text-\[18px\] {
+    font-size: 18px;
+  }
+
   .mob-sm\:text-\[20px\] {
     font-size: 20px;
+  }
+
+  .mob-sm\:font-medium {
+    font-weight: 500;
   }
 }
 
