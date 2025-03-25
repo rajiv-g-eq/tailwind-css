@@ -665,6 +665,10 @@ video {
   width: 105px;
 }
 
+.w-\[135px\] {
+  width: 135px;
+}
+
 .w-\[14px\] {
   width: 14px;
 }
@@ -1894,6 +1898,10 @@ body{
 
   .lg\:w-\[30px\] {
     width: 30px;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:max-w-\[900px\] {
