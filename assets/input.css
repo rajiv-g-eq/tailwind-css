@@ -129,12 +129,6 @@ body{
     font-weight: 400;
 }
 
-.custom-container{
-    max-width: 100%;
-    padding: 0 24px;
-    margin: 0 auto;
-}
-
 .header-main__menu ul li a{
     font-family: var(--font-verdana);
 }
@@ -385,12 +379,186 @@ body{
 .pdp-main__payment span{
     font-family: var(--font-poppins);
 }
+
+.people-saying__item{
+    margin: 0 8px;
+    transition: all 0.3s ease-in;
+}
+.people-saying__item:not(.slick-current) {
+    transform: scale(0.9);
+}
+.people-saying__item.slick-current .people-saying__item-inner{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+}
+.people-saying__slider .slick-track {
+    padding: 10px 0;
+}
+.people-saying__desc p{
+    font-family: var(--font-poppins);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #000000;
+}
+.people-saying__name{
+    font-family: var(--font-poppins);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: #000000;
+    margin-top: 10px;
+}
+.people-saying__slider .slick-arrow{
+    --size: 56px;
+    width: var(--size);
+    height: var(--size);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -130px;
+    transform: translateX(-50%);
+    outline: 0;
+}
+.people-saying__slider .slick-arrow.prev-arrow {
+    left: calc(50% - 40px);
+}
+.people-saying__slider .slick-arrow.next-arrow {
+    left: calc(50% - -40px);
+}
+.other-detail__heading,
+.other-detail__btn span,
+.diff-table__inner-heading{
+    font-family: var(--font-PhoreusCherokee);
+}
+.diff-table__col p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    flex: 1;
+}
+.diff-table__col:first-child p img{
+    max-height: 72px;
+    width: auto;
+}
+.diff-table__col p:first-child{
+    font-family: var(--font-PhoreusCherokee);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.1;
+    letter-spacing: 3px;
+    color: #000;
+    flex-basis: 200px;
+    max-width: 200px;
+    justify-content: start;
+}
+.diff-table__col p:nth-child(2){
+    font-family: var(--font-PhoreusCherokee);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: 3px;
+    text-shadow: 0px 2px 4px #00000096;
+    flex-basis: 208px;
+    max-width: 208px;
+    color: #fff;
+    background: #FFC658;
+    box-shadow: 0px 11px 23px 0px #00000026;
+}
+.diff-table__col:first-child p:nth-child(2) {
+    margin-top: -20px;
+    padding-top: 36px;
+    border-radius: 10px 10px 0 0;
+}
+.diff-table__col:last-child p:nth-child(2) {
+    margin-bottom: -20px;
+    padding-bottom: 36px;
+    border-radius: 0 0 10px 10px;
+}
+.diff-table__col p:not(:first-child, :nth-child(2)){
+    font-family: var(--font-PhoreusCherokee);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.1;
+    letter-spacing: 3px;
+    color: #4C4C4C;
+}
+.diff-table__col p:last-child{
+    flex-basis: 155px;
+    max-width: 155px;
+}
+.diff-table__col p:not(:first-child, :nth-child(2), :last-child){
+    border-right: 1px solid #000000;
+}
+.diff-table__col p:not(:first-child){
+    text-align: center;
+}
+.diff-table__col:not(:last-child){
+    border-bottom: 1px solid #000000;
+}
+.diff-table:after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 80px);
+    height: 415px;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%) rotate(-7.14deg);
+    background: #8CC0DF;
+}
+.diff-table .vactor-left{
+    position: absolute;
+    width: 292px;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.diff-table .vactor-right{
+    position: absolute;
+    width: 266px;
+    height: auto;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.diff-table__box {
+    max-width: 940px;
+    margin: 35px auto 0;
+}
 @media only screen and (min-width: 992px){
-    .custom-container{
-        max-width: 1285px;
-    }   
     .header-main__hamburg{
         display: none;
+    }
+    .people-saying__slider .slick-list:before{
+        content: "";
+        background: linear-gradient(90deg, rgba(248, 250, 252, 0.9) 20.17%, rgba(248, 250, 252, 0) 90.04%);
+        width: 405px;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+    }
+    .people-saying__slider .slick-list:after{
+        content: "";
+        background: linear-gradient(90deg, rgba(248, 250, 252, 0.9) 20.17%, rgba(248, 250, 252, 0) 90.04%);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        width: 405px;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 0;
     }
 }
 @media only screen and (max-width: 991px){
@@ -500,6 +668,60 @@ body{
         background-position: 96% center;
         background-size: 18px;
     }
+    .people-saying__slider{
+        width: calc(100% - 75px);
+        margin: 0 auto;
+    }
+    .people-saying__img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .people-saying__slider .slick-arrow {
+        --size: 18px;
+        bottom: unset;
+        top: 50%;
+        transform: translateX(0%) translateY(-50%);
+    }
+    .people-saying__slider .slick-arrow svg {
+        width: 14px;
+        height: 14px;
+    }
+    .people-saying__slider .slick-arrow.prev-arrow {
+        left: -20px;
+    }
+    .people-saying__slider .slick-arrow.next-arrow {
+        right: -20px;
+        left: unset;
+    }
+    .people-saying__slider .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .people-saying__desc p,
+    .people-saying__name{
+        text-align: left;
+    }
+    .people-saying__desc {
+        padding: 10px 10px 10px 0;
+        align-self: center;
+    }
+    .diff-table__box {
+        max-width: 92%;
+        overflow-x: auto;
+    }
+    .diff-table__col p:first-child{
+        font-size: 16px;
+    }
+    .diff-table__col p:nth-child(2),
+    .diff-table__col p:not(:first-child, :nth-child(2)){
+        font-size: 18px
+    }
+    .diff-table__col p{
+        padding: 12px;
+    }
 }
 @media only screen and (max-width: 767px){
     .bundle-benefit__box-item p:nth-child(2),
@@ -529,6 +751,16 @@ body{
     }
     .pdp-main__guarentee-note img{
         --size: 30px;
+    }
+    .people-saying__desc p{
+        font-size: 12px;
+    }
+    .people-saying__name {
+        font-size: 12px;
+    }
+    .people-saying__desc img[alt="rating"] {
+        max-height: 15px;
+        width: auto;
     }
 }
 @media only screen and (max-width: 389px){

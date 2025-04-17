@@ -111,21 +111,26 @@ $(function () {
     if ($('.js-people-saying-slider').length > 0) {
         $('.js-people-saying-slider').slick({
             slidesToShow: 5,
-            infinite: false,
+            infinite: true,
             slidesToScroll: 1,
             arrows: true,
-            centerMode: false,
+            centerMode: true,
             fade: false,
             dots: false,
             prevArrow: '<button class="slick-arrow prev-arrow"><svg fill=none height=18 viewBox="0 0 10 18"width=10 xmlns=http://www.w3.org/2000/svg><path d="M9 1.5L1.5 9L9 16.5"stroke=black stroke-width=2 /></svg></button>',
             nextArrow: '<button class="slick-arrow next-arrow"><svg fill=none height=18 viewBox="0 0 10 18"width=10 xmlns=http://www.w3.org/2000/svg><path d="M1 1.5L8.5 9L1 16.5"stroke=black stroke-width=2 /></svg></button>',
             responsive: [
                 {
+                    breakpoint: 1281,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
                     breakpoint: 992,
                     settings: {
                         centerMode: false,
                         slidesToShow: 1,
-                        dots: true,
                     }
                 },
             ]
